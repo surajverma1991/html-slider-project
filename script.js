@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  var slides = $(".slider > div");
   $(".slider").slick({
     prevArrow: false,
     nextArrow: false,
@@ -30,10 +29,4 @@ $(document).ready(function () {
       },
     ],
   });
-
-  $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    $('.slick-slide').removeClass('slick-prev slick-next');
-    $('.slick-slide[data-slick-index="' + currentSlide + '"]').addClass('slick-prev');
-    $('.slick-slide[data-slick-index="' + nextSlide + '"]').addClass('slick-next');
-});
 });
