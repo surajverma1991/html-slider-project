@@ -10,7 +10,7 @@ $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           arrows: false,
           centerMode: true,
